@@ -1,0 +1,28 @@
+# Predictive Analytics Service - Requirements
+# Python dependencies for the ML microservice
+
+# Web Framework
+flask==2.3.2
+flask-cors==4.0.0
+
+# Data Processing
+pandas==2.0.2
+numpy==1.24.3
+
+# Machine Learning / Time Series
+scikit-learn==1.2.2
+prophet==1.1.2
+statsmodels==0.14.0
+joblib==1.2.0
+
+# Database
+pymongo==4.3.3
+
+# Configuration
+python-dotenv==1.0.0
+
+# Visualization (for reports)
+matplotlib==3.7.1
+
+# Utilities
+requests==2.31.0

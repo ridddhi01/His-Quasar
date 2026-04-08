@@ -1,0 +1,154 @@
+.doctor-camera-console {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    /* Slightly more prominent shadow for doctors */
+    margin-bottom: 20px;
+    border: 1px solid #e3f2fd;
+}
+
+.console-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e3f2fd;
+    background-color: #e3f2fd;
+    /* Light blue for doctors */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.console-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1565c0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.active-indicators {
+    display: flex;
+    gap: 8px;
+}
+
+.console-actions {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.action-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-color: #90caf9;
+}
+
+.action-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.action-card .label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.action-card small {
+    color: #78909c;
+    font-size: 0.85rem;
+}
+
+.btn-apply-bundle:hover .icon {
+    animation: pulse 1s infinite;
+}
+
+.btn-disposition:hover .icon {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.action-divider {
+    width: 1px;
+    background-color: #e0e0e0;
+}
+
+.applied-bundles-section {
+    padding: 0 20px 20px 20px;
+    border-top: 1px solid #f5f5f5;
+}
+
+.applied-bundles-section h4 {
+    margin: 15px 0 10px 0;
+    font-size: 0.95rem;
+    color: #546e7a;
+}
+
+.bundles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.applied-bundle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #1e88e5;
+}
+
+.bundle-name {
+    font-weight: 500;
+    color: #263238;
+    margin-right: 10px;
+}
+
+.bundle-time {
+    font-size: 0.8rem;
+    color: #78909c;
+}
+
+.bundle-orders-summary {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #546e7a;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

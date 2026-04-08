@@ -1,0 +1,5 @@
+# Placeholder for trained models
+# This directory stores:
+# - opd_prophet.pkl    - OPD rush hour prediction model
+# - bed_arima.pkl      - Bed occupancy prediction model
+# - lab_prophet.pkl    - Lab workload prediction model

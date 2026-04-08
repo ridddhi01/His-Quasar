@@ -1,0 +1,23 @@
+# Revenue Leakage Detection Service - Requirements
+# Python dependencies for the ML microservice
+
+# Web Framework
+flask==2.3.2
+flask-cors==4.0.0
+
+# Data Processing
+pandas==2.0.2
+numpy==1.24.3
+
+# Machine Learning
+scikit-learn==1.2.2
+joblib==1.2.0
+
+# Database
+pymongo==4.3.3
+
+# Configuration
+python-dotenv==1.0.0
+
+# Utilities
+requests==2.31.0

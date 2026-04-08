@@ -1,0 +1,171 @@
+.order-set-modal {
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Category Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.category-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 25px 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cat-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.cat-label {
+    font-weight: 600;
+    color: #34495e;
+    font-size: 1.1rem;
+}
+
+/* Colored Cards */
+.card-cardiac {
+    border-bottom: 4px solid #e53935;
+}
+
+.card-cardiac:hover {
+    background-color: #ffebee;
+}
+
+.card-stroke {
+    border-bottom: 4px solid #1e88e5;
+}
+
+.card-stroke:hover {
+    background-color: #e3f2fd;
+}
+
+.card-trauma {
+    border-bottom: 4px solid #fb8c00;
+}
+
+.card-trauma:hover {
+    background-color: #fff3e0;
+}
+
+.card-sepsis {
+    border-bottom: 4px solid #8e24aa;
+}
+
+.card-sepsis:hover {
+    background-color: #f3e5f5;
+}
+
+/* Trauma Levels */
+.level-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.level-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.level-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.level-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-bottom-left-radius: 8px;
+    color: white;
+}
+
+.level-1 {
+    border-left: 5px solid #d32f2f;
+}
+
+.level-1 .level-badge {
+    background-color: #d32f2f;
+}
+
+.level-1 h4 {
+    color: #d32f2f;
+}
+
+.level-2 {
+    border-left: 5px solid #f57c00;
+}
+
+.level-2 .level-badge {
+    background-color: #f57c00;
+}
+
+.level-2 h4 {
+    color: #f57c00;
+}
+
+.level-3 {
+    border-left: 5px solid #fbc02d;
+}
+
+.level-3 .level-badge {
+    background-color: #fbc02d;
+    color: #333;
+}
+
+.level-3 h4 {
+    color: #f9a825;
+}
+
+.level-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    color: #607d8b;
+}
+
+.btn-text {
+    background: none;
+    border: none;
+    color: #1565c0;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-text:hover {
+    text-decoration: underline;
+}

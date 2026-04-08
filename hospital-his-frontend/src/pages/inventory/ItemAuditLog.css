@@ -1,0 +1,156 @@
+/* Item Audit Log Styles */
+.audit-log-page {
+    padding: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.back-btn {
+    background: #f1f5f9;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.page-header p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.item-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.item-code {
+    font-family: monospace;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.item-name {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.item-category {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.loading,
+.no-data {
+    text-align: center;
+    padding: 60px 20px;
+    color: #64748b;
+    background: white;
+    border-radius: 12px;
+}
+
+.no-data .hint {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -26px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background: #3b82f6;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.timeline-content {
+    background: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.timeline-header .action {
+    font-weight: 600;
+    color: #1e293b;
+    text-transform: capitalize;
+}
+
+.timeline-header .time {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.timeline-body p {
+    margin: 4px 0;
+    color: #475569;
+    font-size: 14px;
+}
+
+.timeline-body .user {
+    color: #3b82f6;
+    font-size: 13px;
+}
+
+.timeline-body .reason {
+    font-style: italic;
+    color: #64748b;
+}
