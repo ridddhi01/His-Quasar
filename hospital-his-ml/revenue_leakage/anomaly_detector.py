@@ -15,7 +15,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from shared.utils import setup_logging
-from config import Config
+from revenue_leakage.config import Config
 
 logger = setup_logging('anomaly_detector')
 

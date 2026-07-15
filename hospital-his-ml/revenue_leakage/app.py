@@ -13,7 +13,7 @@ from flask_cors import CORS
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from shared.utils import setup_logging, success_response, error_response
-from config import Config
+from revenue_leakage.config import Config
 from data_processor import get_data_processor
 from anomaly_detector import get_anomaly_detector
 from pattern_analyzer import get_pattern_analyzer

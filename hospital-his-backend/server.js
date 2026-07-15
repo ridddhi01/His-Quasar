@@ -238,9 +238,9 @@ const startServer = async () => {
             logger.info('       HOSPITAL INFORMATION SYSTEM (HIS) BACKEND SERVER        ');
             logger.info('═══════════════════════════════════════════════════════════════');
             logger.info(`🚀 Server running in ${config.nodeEnv} mode on port ${PORT}`);
-            logger.info(`📡 API Base URL: http://localhost:${PORT}/api/v1`);
+            logger.info(`📡 API Base URL: https://his-quasar.onrender.com:${PORT}/api/v1`);
             logger.info(`🔌 WebSocket enabled`);
-            logger.info(`📋 Health check: http://localhost:${PORT}/api/health`);
+            logger.info(`📋 Health check: https://his-quasar.onrender.com:${PORT}/api/health`);
             logger.info('═══════════════════════════════════════════════════════════════');
         });
     } catch (error) {

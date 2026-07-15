@@ -13,7 +13,7 @@ from flask_cors import CORS
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from shared.utils import setup_logging, success_response, error_response
-from config import Config
+from predictive_analytics.config import Config
 from opd_predictor import get_opd_predictor
 from bed_predictor import get_bed_predictor
 from lab_predictor import get_lab_predictor

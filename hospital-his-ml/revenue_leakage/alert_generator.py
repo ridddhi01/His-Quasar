@@ -14,7 +14,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from shared.db_connector import get_db
 from shared.utils import setup_logging, serialize_document
-from config import Config
+from revenue_leakage.config import Config
 
 logger = setup_logging('alert_generator')
 
