@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { io } from 'socket.io-client';
+import { SOCKET_URL } from '../../config';
 import {
     fetchLiveBoard,
     fetchDashboardStats,
@@ -68,7 +69,7 @@ const EmergencyDashboard = () => {
 
     // Socket connection
     useEffect(() => {
-        const socketInstance = io('http://localhost:5001', {
+        const socketInstance = io(SOCKET_URL, {
             withCredentials: true,
         });
 

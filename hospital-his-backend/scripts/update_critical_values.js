@@ -7,7 +7,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const LabTestMaster = require('../models/LabTestMaster');
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hospital_his_db';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const updateCriticalValues = async () => {
     console.log('🔌 Connecting to MongoDB...');

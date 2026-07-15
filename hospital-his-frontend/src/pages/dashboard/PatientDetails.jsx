@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ipdService from '../../services/ipd.service';
 import patientsService from '../../services/patients.service';
+import { FILE_SERVICE_URL } from '../../config';
 import toast from 'react-hot-toast';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Calendar, Activity, User, MapPin, Phone, Mail, Clock, FlaskConical, X, AlertCircle, CheckCircle, BedDouble } from 'lucide-react';
@@ -274,7 +275,7 @@ const PatientDetails = () => {
                                 {selectedLabResult.reportPdf && (
                                     <div className="flex gap-2 mb-4">
                                         <a
-                                            href={`http://localhost:5001/${selectedLabResult.reportPdf.replace(/\\\\/g, '/')}`}
+                                            href={`${FILE_SERVICE_URL}/${selectedLabResult.reportPdf.replace(/\\\\/g, '/')}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-lg hover:bg-blue-600 flex items-center gap-2"

@@ -12,7 +12,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const ProcedureCode = require('../models/ProcedureCode');
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hospital_his';
+const MONGO_URI = process.env.MONGODB_URI;
 
 const procedureCodes = [
     // Evaluation and Management

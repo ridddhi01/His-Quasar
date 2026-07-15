@@ -1,3 +1,4 @@
+import { API_BASE_URL } from '../../config';
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -6,7 +7,7 @@ import axios from 'axios'; // We'll use axios directly for this complex form for
 import CarePlanCreator from '../../components/doctor/CarePlanCreator';
 import ClinicalCodingTab from '../../components/clinical/ClinicalCodingTab';
 
-const API_RES_URL = 'http://localhost:5001/api/v1/';
+const API_RES_URL = `${API_BASE_URL}/`;
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));
     return { headers: { Authorization: `Bearer ${user?.token}` } };

@@ -1,3 +1,4 @@
+import { API_BASE_URL } from '../../config';
 import React, { useState, useEffect } from 'react';
 import {
     Shield,
@@ -15,7 +16,7 @@ import {
 import { toast } from 'react-hot-toast';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1';
+const API_URL = API_BASE_URL;
 
 const Admin = () => {
     const [activeTab, setActiveTab] = useState('discounts');

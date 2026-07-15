@@ -1,3 +1,4 @@
+import { API_BASE_URL, OCR_SERVICE_URL } from '../config';
 /**
  * ID Scan Service
  * ===============
@@ -7,7 +8,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1/patients/';
+const API_URL = `${API_BASE_URL}/patients/`;
 
 /**
  * Get authorization config from localStorage
@@ -77,7 +78,7 @@ const scanIdCard = async (imageFile) => {
  */
 const checkServiceAvailability = async () => {
     try {
-        const response = await axios.get('http://localhost:8000/health', {
+        const response = await axios.get(`${OCR_SERVICE_URL}/health`, {
             timeout: 3000
         });
         return response.data.status === 'healthy';

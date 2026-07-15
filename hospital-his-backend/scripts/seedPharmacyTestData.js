@@ -24,7 +24,7 @@ const Prescription = require('../models/Prescription');
 const Appointment = require('../models/Appointment');
 const Department = require('../models/Department');
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/hospital';
+const mongoURI = process.env.MONGODB_URI;
 
 async function seed() {
     try {

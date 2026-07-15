@@ -19,7 +19,7 @@ class Config:
     FLASK_DEBUG = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
     
     # MongoDB Configuration
-    MONGODB_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017/hospital_his')
+    MONGODB_URI = os.getenv('MONGODB_URI')
     DB_NAME = os.getenv('DB_NAME', 'hospital_his')
     
     # Model Paths

@@ -11,7 +11,7 @@ const config = {
     nodeEnv: process.env.NODE_ENV || 'development',
 
     // MongoDB Configuration
-    mongodbUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/hospital_his',
+    mongodbUri: process.env.MONGODB_URI,
 
     // JWT Configuration
     jwtSecret: process.env.JWT_SECRET || 'your_jwt_secret_key_here',
@@ -19,8 +19,8 @@ const config = {
     jwtRefreshExpire: process.env.JWT_REFRESH_EXPIRE || '30d',
 
     // ML Services URLs
-    mlRevenueServiceUrl: process.env.ML_REVENUE_SERVICE_URL || 'http://localhost:5001',
-    mlPredictServiceUrl: process.env.ML_PREDICT_SERVICE_URL || 'http://localhost:5002',
+    mlRevenueServiceUrl: process.env.ML_REVENUE_SERVICE_URL,
+    mlPredictServiceUrl: process.env.ML_PREDICT_SERVICE_URL,
 
     // Email/SMTP Configuration
     smtp: {
@@ -49,7 +49,7 @@ const config = {
     logLevel: process.env.LOG_LEVEL || 'info',
 
     // Cors
-    corsOrigins: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : ['http://localhost:3000', 'http://localhost:5173'],
+    corsOrigins: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : [],
 };
 
 module.exports = config;

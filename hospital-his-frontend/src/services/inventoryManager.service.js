@@ -1,3 +1,4 @@
+import { API_BASE_URL } from '../config';
 /**
  * Inventory Manager Service
  * Frontend API client for non-medicine inventory management
@@ -6,7 +7,7 @@
 
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api/v1';
+const API_URL = API_BASE_URL;
 const BASE_URL = `${API_URL}/inventory-manager`;
 
 // Create axios instance with auth header

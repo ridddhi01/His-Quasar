@@ -1,6 +1,7 @@
+import { API_BASE_URL } from '../config';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1/patients/';
+const API_URL = `${API_BASE_URL}/patients/`;
 
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));
@@ -45,7 +46,7 @@ const getPatientHistory = async (id) => {
 
 // Get patient lab results
 const getPatientLabResults = async (patientId) => {
-    const response = await axios.get(`http://localhost:5001/api/v1/lab/orders?patient=${patientId}`, getConfig());
+const response = `${API_BASE_URL}/lab/orders?patient=${patientId}`, getConfig());`;
     return response.data.data;
 };
 

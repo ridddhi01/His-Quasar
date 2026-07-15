@@ -8,8 +8,8 @@ const config = require('../config/config');
 
 class MLService {
     constructor() {
-        this.revenueServiceUrl = config.ml?.revenueServiceUrl || 'http://localhost:5001';
-        this.predictServiceUrl = config.ml?.predictServiceUrl || 'http://localhost:5002';
+        this.revenueServiceUrl = config.mlRevenueServiceUrl;
+        this.predictServiceUrl = config.mlPredictServiceUrl;
         this.timeout = 30000; // 30 seconds timeout
     }
 

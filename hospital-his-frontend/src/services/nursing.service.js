@@ -1,6 +1,7 @@
+import { API_BASE_URL } from '../config';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api/v1';
+const API_URL = API_BASE_URL;
 
 // Create axios instance with auth header
 const getAuthHeaders = () => {

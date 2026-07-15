@@ -1,6 +1,7 @@
+import { API_BASE_URL } from '../config';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1/insurance';
+const API_URL = `${API_BASE_URL}/insurance`;
 
 const getConfig = () => {
     const user = JSON.parse(localStorage.getItem('user'));

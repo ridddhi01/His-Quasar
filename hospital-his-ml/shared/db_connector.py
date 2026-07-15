@@ -36,7 +36,7 @@ class DatabaseConnector:
         if self._initialized:
             return
             
-        self.mongodb_uri = os.getenv('MONGODB_URI', 'mongodb://localhost:27017/hospital_his')
+        self.mongodb_uri = os.getenv('MONGODB_URI')
         self.db_name = os.getenv('DB_NAME', 'hospital_his')
         self._connect()
         self._initialized = True

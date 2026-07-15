@@ -244,7 +244,7 @@ const Medicine = require('../models/Medicine');
 const DrugInteraction = require('../models/DrugInteraction');
 
 // MongoDB connection
-const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/hospital';
+const mongoURI = process.env.MONGODB_URI;
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

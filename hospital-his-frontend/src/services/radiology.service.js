@@ -1,3 +1,4 @@
+import { API_BASE_URL } from '../config';
 /**
  * Radiology Service
  * API calls for Radiology module
@@ -5,7 +6,7 @@
 
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5001/api/v1';
+const API_BASE = API_BASE_URL;
 
 const api = axios.create({
     baseURL: API_BASE,

@@ -10,7 +10,7 @@ const Department = require('../models/Department');
 const { USER_ROLES } = require('../config/constants');
 
 // Check for MongoDB URI
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/hospital_his_db';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const addRadiologist = async () => {
     console.log('🔌 Connecting to MongoDB...');

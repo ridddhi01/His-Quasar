@@ -1,6 +1,7 @@
+import { API_BASE_URL } from '../config';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/v1/analytics/';
+const API_URL = `${API_BASE_URL}/analytics/`;
 
 // Get user from local storage to send token
 const getConfig = () => {

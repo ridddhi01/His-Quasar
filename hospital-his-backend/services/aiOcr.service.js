@@ -14,7 +14,7 @@ const path = require('path');
 const logger = require('../utils/logger');
 
 // AI OCR Service base URL - configurable via environment
-const AI_OCR_SERVICE_URL = process.env.AI_OCR_SERVICE_URL || 'http://localhost:8000';
+const AI_OCR_SERVICE_URL = process.env.AI_OCR_SERVICE_URL;
 
 /**
  * Extract patient details from an ID card image

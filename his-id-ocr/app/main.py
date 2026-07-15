@@ -46,7 +46,7 @@ app = FastAPI(
 # CORS configuration - allow requests from HIS frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "http://localhost:5001"],
+    allow_origins=[origin.strip() for origin in os.getenv("CORS_ORIGINS", "").split(",")] if os.getenv("CORS_ORIGINS") else ["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
