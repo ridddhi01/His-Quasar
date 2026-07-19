@@ -1,9 +1,12 @@
-﻿node_modules/
+node_modules/
 frontend-legacy/node_modules/
 hospital-his-backend/node_modules/
 hospital-his-frontend/node_modules/
 his/
 .venv/
+venv/
+__pycache__/
+*.pyc
 .env
 *.log
 uploads/

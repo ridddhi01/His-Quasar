@@ -1,0 +1,21 @@
+services:
+  # OCR Service (Requires system dependencies like Tesseract, so it uses Docker)
+  - type: web
+    name: his-id-ocr
+    env: docker
+    rootDir: his-id-ocr
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    plan: free
+    autoDeploy: true
+
+  # Predictive & Revenue ML Service (Standard Python)
+  - type: web
+    name: hospital-his-ml
+    env: python
+    rootDir: hospital-his-ml
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    plan: free
+    autoDeploy: true

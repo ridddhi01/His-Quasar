@@ -23,6 +23,10 @@ alert_model = AlertGenerator()
 def home():
     return {"message": "ML Service Running 🚀"}
 
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
+
 # ------------------ PREDICTIONS ------------------
 
 @app.post("/predict/bed")
