@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
 # Predictive Analytics
-from predictive_analytics.bed_predictor import BedPredictor
-from predictive_analytics.lab_predictor import LabPredictor
+from predictive_analytics.bed_predictor import BedOccupancyPredictor
+from predictive_analytics.lab_predictor import LabWorkloadPredictor
 from predictive_analytics.opd_predictor import OPDPredictor
 
 # Revenue Leakage
@@ -12,8 +12,8 @@ from revenue_leakage.alert_generator import AlertGenerator
 app = FastAPI()
 
 # Initialize models once
-bed_model = BedPredictor()
-lab_model = LabPredictor()
+bed_model = BedOccupancyPredictor()
+lab_model = LabWorkloadPredictor()
 opd_model = OPDPredictor()
 
 anomaly_model = AnomalyDetector()
