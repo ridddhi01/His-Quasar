@@ -46,7 +46,7 @@ const getPatientHistory = async (id) => {
 
 // Get patient lab results
 const getPatientLabResults = async (patientId) => {
-const response = `${API_BASE_URL}/lab/orders?patient=${patientId}`, getConfig());`;
+    const response = await axios.get(`${API_BASE_URL}/lab/orders?patient=${patientId}`, getConfig());
     return response.data.data;
 };
 
