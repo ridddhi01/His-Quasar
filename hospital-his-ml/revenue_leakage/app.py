@@ -14,11 +14,11 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from shared.utils import setup_logging, success_response, error_response
 from revenue_leakage.config import Config
-from data_processor import get_data_processor
-from anomaly_detector import get_anomaly_detector
-from pattern_analyzer import get_pattern_analyzer
-from alert_generator import get_alert_generator
-from model_trainer import get_model_trainer
+from .data_processor import get_data_processor
+from .anomaly_detector import get_anomaly_detector
+from .pattern_analyzer import get_pattern_analyzer
+from .alert_generator import get_alert_generator
+from .model_trainer import get_model_trainer
 
 # Initialize Flask app
 app = Flask(__name__)

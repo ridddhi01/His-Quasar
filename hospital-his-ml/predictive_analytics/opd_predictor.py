@@ -16,7 +16,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shared.db_connector import get_db
 from shared.utils import setup_logging, serialize_document
 from predictive_analytics.config import Config
-from time_series import ProphetPredictor, prepare_time_series_data
+from .time_series import ProphetPredictor, prepare_time_series_data
 
 logger = setup_logging('opd_predictor')
 

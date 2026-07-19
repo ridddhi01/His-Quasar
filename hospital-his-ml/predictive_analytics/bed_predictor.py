@@ -16,7 +16,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shared.db_connector import get_db
 from shared.utils import setup_logging
 from predictive_analytics.config import Config
-from time_series import ARIMAPredictor
+from .time_series import ARIMAPredictor
 
 logger = setup_logging('bed_predictor')
 

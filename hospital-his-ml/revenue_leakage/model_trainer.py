@@ -15,8 +15,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from shared.utils import setup_logging
 from revenue_leakage.config import Config
-from data_processor import get_data_processor
-from anomaly_detector import get_anomaly_detector
+from .data_processor import get_data_processor
+from .anomaly_detector import get_anomaly_detector
 
 logger = setup_logging('model_trainer')
 
