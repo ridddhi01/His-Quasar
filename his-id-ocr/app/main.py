@@ -25,7 +25,6 @@ from PIL import Image
 import logging
 
 # Local imports
-from .donut_loader import get_donut_loader
 from .extractor import extract_patient_details
 from .image_masker import process_pil_image
 
@@ -83,25 +82,10 @@ class ExtractionResponse(BaseModel):
 @app.on_event("startup")
 async def startup_event():
     """
-    Initialize the Donut model on startup.
-    This ensures model is ready when first request arrives.
+    Startup event - Tesseract OCR is used directly, no model pre-loading needed.
     """
     logger.info("=" * 60)
-    logger.info("     HIS ID OCR SERVICE - Starting Up")
-    logger.info("=" * 60)
-    
-    try:
-        # Pre-load the model (optional - can also lazy load on first request)
-        # Comment this out if you prefer lazy loading
-        logger.info("Pre-loading Donut model...")
-        loader = get_donut_loader()
-        loader.initialize()
-        logger.info("Donut model loaded successfully!")
-    except Exception as e:
-        logger.warning(f"Model pre-loading skipped: {str(e)}")
-        logger.info("Model will load on first request")
-    
-    logger.info("=" * 60)
+    logger.info("     HIS ID OCR SERVICE - Starting Up (Tesseract)")
     logger.info(f"  Raw uploads:    {UPLOAD_DIR_RAW}")
     logger.info(f"  Masked uploads: {UPLOAD_DIR_MASKED}")
     logger.info("=" * 60)

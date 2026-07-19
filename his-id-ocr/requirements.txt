@@ -1,20 +1,13 @@
 # AI ID OCR Service for HIS
-# Dependencies for the FastAPI AI microservice
+# Tesseract-based OCR (lightweight, free-tier compatible)
 
 # FastAPI framework
 fastapi>=0.104.1
 uvicorn>=0.24.0
 python-multipart>=0.0.6
 
-# AI/ML
-# Using looser constraints to ensure we get wheels for Python 3.12+
-transformers>=4.35.0
-torch>=2.0.0
-accelerate>=0.24.0
-
 # Image processing
 pillow>=10.1.0
-opencv-python>=4.8.1.78
 pytesseract>=0.3.10
 
 # Utilities
